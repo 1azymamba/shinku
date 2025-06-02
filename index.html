@@ -1,1 +1,19 @@
-test
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero py-32 text-center">
+  <img src="/images/logo.png" class="mx-auto w-48" />
+  <h1 class="text-4xl mt-8 font-bold">Red Team is Love.</h1>
+  <p class="mt-4 text-lg">Title</p>
+  <a href="/blog/" class="btn-primary mt-6">ブログを見る</a>
+</section>
+
+<section class="features grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
+  <div class="feature-box text-center">
+    <img src="/images/feature1.png" class="w-16 mx-auto" />
+    <h2 class="text-xl font-bold mt-4">Programming > Rust or Python</h2>
+    <p>testestest</p>
+  </div>
+  <!-- 以下略 -->
+</section>
+{% endblock %}
